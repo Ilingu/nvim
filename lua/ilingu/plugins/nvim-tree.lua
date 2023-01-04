@@ -7,30 +7,27 @@ vim.g.loaded_netrwPlugin = 1
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
--- change color for arrows in tree to light yellow 
+-- change color for arrows in tree to light yellow
 vim.cmd([[ highlight NvimTreeIndentMarker guifg=#f1c40f ]])
 
 require("nvim-tree").setup({
-  renderer = {
-    icons = {
-      glyphs = {
-        folder = {
-          arrow_closed = "", -- arrow when folder is closed
-          arrow_open = "", -- arrow when folder is open
-        },
-      },
-    },
-  },
-  filters = {
-    dotfiles = true,
-  },
-  actions = {
-    open_file = {
-      window_picker = {
-        enable = false,
-      },
-    },
-  },
+	renderer = {
+		icons = {
+			glyphs = {
+				folder = {
+					arrow_closed = "", -- arrow when folder is closed
+					arrow_open = "", -- arrow when folder is open
+				},
+			},
+		},
+	},
+	actions = {
+		open_file = {
+			window_picker = {
+				enable = false,
+			},
+		},
+	},
 })
 
 -- keybindings:

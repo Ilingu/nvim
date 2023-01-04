@@ -5,11 +5,9 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
 	"tsserver",
-	"eslint",
 	"sumneko_lua",
 	"rust_analyzer",
-	"emmet_ls",
-	"tailwindcss",
+	-- "tailwindcss",
 	"html",
 })
 

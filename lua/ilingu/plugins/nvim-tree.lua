@@ -26,7 +26,14 @@ require("nvim-tree").setup({
 			window_picker = {
 				enable = false,
 			},
+			resize_window = true,
 		},
+	},
+	diagnostics = {
+		enable = true,
+	},
+	git = {
+		ignore = false,
 	},
 })
 

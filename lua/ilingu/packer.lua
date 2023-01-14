@@ -105,4 +105,7 @@ return require("packer").startup(function(use)
 		},
 	})
 	use("jose-elias-alvarez/null-ls.nvim")
+
+	-- Funny
+	use("eandrju/cellular-automaton.nvim")
 end)

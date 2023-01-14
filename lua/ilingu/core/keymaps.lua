@@ -1,4 +1,4 @@
--- keymap leader to space 
+-- keymap leader to space
 vim.g.mapleader = " "
 local keymap = vim.keymap
 
@@ -62,13 +62,17 @@ vim.keymap.set("n", "<C-b>", vim.cmd.NvimTreeToggle)
 vim.keymap.set("n", "<C-p>", vim.cmd.NvimTreeFocus)
 
 -- fugitive
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git);
+vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
 
--- undotree 
+-- undotree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 -- Vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
+
+-- CellularAutomaton
+keymap.set("n", "<leader>mir", "<cmd>CellularAutomaton make_it_rain<CR>")
+keymap.set("n", "<leader>gol", "<cmd>CellularAutomaton game_of_life<CR>")
 
 -- Comments keybindings
 
